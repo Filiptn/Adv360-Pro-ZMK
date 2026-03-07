@@ -68,23 +68,47 @@
         };
 
         extra1 {
-            display-name = "Red";
-            status = "reserved";
+            display-name = "Vim";
+            bindings = <
+&trans  &trans  &trans         &trans         &trans  &trans        &trans  &trans  &trans  &trans     &trans  &trans  &trans     &trans
+&trans  &trans  &kp LC(RIGHT)  &kp LC(RIGHT)  &trans  &trans        &trans  &trans  &trans  &kp LC(Z)  &tog 4  &trans  &kp LC(V)  &trans
+&trans  &trans  &trans         &trans         &trans  &trans        &trans  &trans  &trans  &trans     &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp DEL        &trans         &trans  &kp LC(LEFT)  &trans  &trans  &kp F3  &trans     &trans  &trans  &kp LC(F)  &trans
+&trans  &tog 4  &trans         &trans         &trans                &trans  &trans  &trans  &trans     &trans  &trans             &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         extra2 {
             display-name = "Purple";
-            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         extra3 {
             display-name = "Cyan";
-            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         extra4 {
             display-name = "Yellow";
-            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
