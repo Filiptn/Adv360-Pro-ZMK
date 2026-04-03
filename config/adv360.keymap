@@ -17,6 +17,8 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <167>;
         };
     };
 
@@ -26,11 +28,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL     &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                    &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB       &kp Q      &kp W     &kp E     &kp R      &kp T   &kp PRINTSCREEN                                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&lt 5 ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &kp K_CONTEXT_MENU  &kp LCTRL  &hm LALT DELETE        &kp LEFT_COMMAND         &kp RCTRL                  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT     &kp Z      &kp X     &kp C     &kp V      &kp B                                  &hm LEFT_ALT HOME      &hm RCMD PAGE_UP                                               &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2         &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE       &kp LCMD   &hm LSHFT END          &hm RIGHT_ALT PAGE_DOWN  &hm LA(RIGHT_SHIFT) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL     &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                          &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0          &kp MINUS
+&kp TAB       &kp Q      &kp W     &kp E     &kp R      &kp T   &kp PRINTSCREEN                                                                                 &none      &kp Y   &kp U   &kp I      &kp O     &kp P           &kp BSLH
+&lt 5 ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &kp K_CONTEXT_MENU  &hm LCTRL DEL  &hm LALT F16           &kp LEFT_COMMAND      &kp RCTRL       &none      &kp H   &kp J   &kp K      &kp L     &hm SEMI LCTRL  &kp SQT
+&kp LSHFT     &kp Z      &kp X     &kp C     &kp V      &kp B                                      &hm LEFT_ALT HOME      &hm RCMD PAGE_UP                                 &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
+&mo 2         &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE       &kp LCMD       &hm LSHFT END          &hm RSHIFT PAGE_DOWN  &hm LALT ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT        &mo 2
             >;
         };
 
@@ -48,11 +50,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1   &kp F2   &kp F3     &kp F4         &kp F5   &kp F6   &tog 1                                      &mo 3        &kp F7      &kp F8          &kp F9            &kp F10     &kp F11  &kp F12
-&kp F13  &kp F14  &kp F15    &kp F16        &kp F17  &kp F18  &trans                                      &none        &kp F19     &kp F20         &kp F21           &kp F22     &kp F23  &kp F24
-&trans   &trans   &kp PSCRN  &kp INSERT     &trans   &trans   &trans  &trans  &trans      &trans  &trans  &kp C_POWER  &kp C_PREV  &kp C_VOL_UP    &kp C_VOL_DN      &kp C_NEXT  &trans   &trans
-&trans   &trans   &trans     &kp C_AL_CALC  &trans   &trans                   &trans      &trans                       &kp C_MUTE  &kp C_BRI_UP    &kp C_BRI_DN      &trans      &trans   &trans
-&trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans      &trans  &trans  &kp C_PP                 &kp LA(LC(UP))  &kp LA(LC(DOWN))  &trans      &trans   &trans
+&kp F1   &kp F2   &kp F3     &kp F4         &kp F5   &kp F6   &tog 1                                       &mo 3        &kp F7      &kp F8          &kp F9            &kp F10     &kp F11  &kp F12
+&kp F13  &kp F14  &kp F15    &kp F16        &kp F17  &kp F18  &kp F13                                      &kp F15      &kp F19     &kp F20         &kp F21           &kp F22     &kp F23  &kp F24
+&trans   &trans   &kp PSCRN  &kp INSERT     &trans   &trans   &kp F14  &trans  &trans      &trans  &trans  &kp C_POWER  &kp C_PREV  &kp C_VOL_UP    &kp C_VOL_DN      &kp C_NEXT  &trans   &trans
+&trans   &trans   &trans     &kp C_AL_CALC  &trans   &trans                    &trans      &trans                       &kp C_MUTE  &kp C_BRI_UP    &kp C_BRI_DN      &trans      &trans   &trans
+&trans   &trans   &trans     &trans         &trans            &trans   &trans  &trans      &trans  &trans  &kp C_PP                 &kp LA(LC(UP))  &kp LA(LC(DOWN))  &trans      &trans   &trans
             >;
         };
 
@@ -70,22 +72,22 @@
         Cs-layer {
             display-name = "cs";
             bindings = <
-&kp ESCAPE  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &tog 4                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp Q           &kp Q         &kp W         &kp E         &kp R   &kp T                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &none           &kp A         &kp S         &kp D         &kp F   &kp G      &kp F1     &kp F2      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V                         &kp F3      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL   &none           &none         &trans        &trans                &kp SPACE  &kp SPACE  &kp F4      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &tog 4                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &none  &kp Q         &kp W         &kp E         &kp R         &kp T                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &none  &kp A         &kp S         &kp D         &kp F         &kp G      &kp F1     &kp F2      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &none  &kp Z         &kp X         &kp C         &kp V                               &kp F3      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &none  &none         &trans        &trans                      &kp SPACE  &kp SPACE  &kp F4      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         symbol+nav-layer {
             display-name = "Purple";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans     &trans                                                      &trans  &kp CARET       &kp AMPERSAND         &kp ASTERISK           &kp EQUAL         &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &kp TILDE  &trans                                                      &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans       &trans      &trans  &trans  &trans  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT         &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                     &trans      &trans                  &kp LESS_THAN   &kp LBKT              &kp RBKT               &kp GREATER_THAN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans             &kp LC(BACKSPACE)  &kp LC(DEL)  &trans      &trans  &trans  &trans                  &kp PLUS              &kp MINUS              &kp UNDERSCORE    &trans    &trans
+&trans  &kp EXCL  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT  &trans                                                      &trans  &kp CARET       &kp AMPERSAND         &kp ASTERISK           &kp EQUAL         &trans    &trans
+&trans  &trans    &trans  &trans     &trans      &kp TILDE    &trans                                                      &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PIPE  &trans
+&trans  &trans    &trans  &trans     &trans      &trans       &trans             &trans       &trans      &trans  &trans  &trans  &kp LEFT        &kp DOWN              &kp UP                 &kp RIGHT         &trans    &trans
+&trans  &trans    &trans  &trans     &trans      &trans                                       &trans      &trans                  &kp LESS_THAN   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans    &trans
+&trans  &trans    &trans  &trans     &trans                   &kp LC(BACKSPACE)  &kp LC(DEL)  &trans      &trans  &trans  &trans                  &kp PLUS              &kp MINUS              &kp UNDERSCORE    &trans    &trans
             >;
         };
 
